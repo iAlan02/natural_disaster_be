@@ -1,9 +1,9 @@
 import { IsNotEmpty, IsOptional, IsString } from 'class-validator';
 
-export class UpdateDisasterDto {
-  @IsNotEmpty({ message: 'Disaster type is required' })
-  @IsString({ message: 'Disaster type must be a string' })
-  disasterType: string;
+export class UpdateAccidentDto {
+  @IsNotEmpty({ message: 'Accident type is required' })
+  @IsString({ message: 'Accident type must be a string' })
+  accidentType: string;
 
   @IsOptional()
   @IsString({ message: 'Location must be a string' })

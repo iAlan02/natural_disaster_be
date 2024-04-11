@@ -1,12 +1,12 @@
 import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 
-@Entity('disasters')
-export class Disasters {
+@Entity('accidents')
+export class Accidents {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column({ name: 'disaster_type', length: 50, nullable: false })
-  disasterType: string;
+  @Column({ name: 'accident_type', length: 50, nullable: false })
+  accidentType: string;
 
   @Column({ name: 'location', length: 50, nullable: false })
   location: string;
